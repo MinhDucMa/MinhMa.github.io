@@ -33,6 +33,7 @@
   border: none;
   color: #340095;
   font-size: 17px;
+  overflow: hidden;
 }
 
 .course-button:hover {
