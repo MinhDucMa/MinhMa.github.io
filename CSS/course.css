@@ -1,0 +1,108 @@
+.course-container {
+  display: block;
+  text-align: center;
+  border: black solid thin;
+  margin-top: 50px;
+  border-bottom: none;
+}
+
+.course-section-title {
+  border-bottom: solid thin;
+  background-color: #e5d9b6;
+  padding: 15px 0 15px 0;
+}
+
+.course-section-title h2 {
+  margin: 0;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.course-button {
+  background-color: #a4be7b;
+  width: 75%;
+  height: 3.5rem;
+  border-radius: 40px;
+  border: none;
+  color: #340095;
+  font-size: 17px;
+}
+
+.course-button:hover {
+  cursor: pointer;
+  border: solid thin black;
+}
+
+.course-button:active {
+  box-shadow: 0 3px 0 #00823f;
+  top: 3px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgb(232, 211, 185);
+  font-size: 20px;
+  width: 500px;
+  height: px;
+  max-width: 80%;
+  transition: 500ms ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 400ms ease-in-out;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+  background-color: rgba(213, 132, 26, 0.139);
+}

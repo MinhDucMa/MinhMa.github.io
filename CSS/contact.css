@@ -1,0 +1,101 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-element {
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "form-title           form-title"
+    "firstname            lastname"
+    "email                phone"
+    "message              message"
+    "utility-button       utility-button";
+  gap: 1rem;
+  margin-top: 5rem;
+  border: solid thin;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.form-title {
+  grid-area: form-title;
+  display: flex;
+  justify-content: center;
+}
+
+.firstname {
+  grid-area: firstname;
+}
+
+.lastname {
+  grid-area: lastname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phonenumber {
+  grid-area: phone;
+}
+
+.messege {
+  grid-area: message;
+}
+
+.utility-button {
+  grid-area: utility-button;
+  margin: 20px;
+}
+
+.type-box {
+  width: 95%;
+  height: 50%;
+  font-size: 15px;
+  background-color: bisque;
+  border: thin;
+}
+
+.type-box:hover {
+  cursor: pointer;
+}
+
+.message-box {
+  height: 100%;
+  padding: 0.5em;
+}
+
+.type-box::placeholder {
+  top: 0;
+  left: 0;
+}
+
+.firstname-box,
+.lastname-box,
+.email-box,
+.phone-box,
+.message-box {
+  border-radius: 20px;
+  padding-left: 5px;
+}
+
+.btn-primary,
+.btn-secondary {
+  margin: 0 20px;
+  width: 150px;
+  height: 40px;
+  background-color: rgba(144, 238, 144, 0.452);
+  border-radius: 15px;
+}
+
+.btn-primary,
+.btn-secondary:hover {
+  cursor: pointer;
+}

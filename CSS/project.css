@@ -1,0 +1,138 @@
+.project-header {
+  border: solid thin;
+  background-color: #e5d9b6;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  margin-top: 50px;
+}
+
+.project-header h2 {
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  position: relative;
+  flex: 1;
+  max-width: 460px;
+  height: 450px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.project-image img {
+  opacity: 0.8;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+
+.project-image:hover img {
+  opacity: 1;
+}
+
+.project-image .project-description {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: transform;
+}
+
+.project-image .project-description h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300px;
+  margin-top: 70px;
+}
+
+.project-image:hover .project-description h2 {
+  transform: translateY(-30px);
+}
+
+.project-image .project-description p {
+  margin: 30px 30px 0 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.project-image:hover .project-description p {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.more {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  bottom: -120px;
+  transition: 0.6s;
+  transition-property: bottom;
+}
+
+.project-image:hover .more {
+  background: whitesmoke;
+  bottom: -35px;
+}
+
+.more .github-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.more .github-link:hover {
+  color: rgb(107, 87, 87);
+}
+
+.more .icon-links i {
+  color: #000;
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 40px;
+}
+
+.more .icon-links i:hover {
+  color: rgb(107, 87, 87);
+}
+
+@media (max-width: 1080px) {
+  .project-image {
+    flex: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image .project-description p {
+    font-size: 16px;
+  }
+
+  .more .github-link,
+  .more .icon-links a i {
+    font-size: 18px;
+  }
+}

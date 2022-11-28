@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/nav.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/project.css" />
+    <link rel="stylesheet" href="CSS/course.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script defer src="Javascript/nav.js"></script>
+    <script defer src="Javascript/coursemenu.js"></script>
+    <title>My Information</title>
+  </head>
+  <body>
+    <a name="Home"></a>
+    <!-- navigation bar that help navigate to different section within the page -->
+    <div class="nav-container">
+      <nav class="nav-section">
+        <div class="left-section">
+          <img
+            class="title-img"
+            alt="profile image of Minh Ma"
+            src="image/profile_img.png"
+          />
+        </div>
+
+        <div class="middle-section">
+          <h1>My Porfolio</h1>
+        </div>
+
+        <div class="right-section">
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#course-section">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form-section">Contact</a>
+            </li>
+          </ul>
+          <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--About section that contain some background information about me  -->
+
+    <div class="about-section" id="about-section">
+      <div class="profile-picture">
+        <img alt="test_img" src="image/MinhMa_Photo.jpg" class="test-picture" />
+      </div>
+      <div class="article-section">
+        <h1>Something about me!</h1>
+        <h2>Hi, my name is Minh Ma</h2>
+        <p>
+          I am currently an undergraduate student in Portland State Univesity. I
+          am pursuing a Bachelor's Degree in Computer Science along with a minor
+          in Mathematics. I am on my journey to improve my knowledge within the
+          software field relating to both backend and frontend to explore,
+          determine and better prepare for my future career. Creating websites
+          and applications that can provide great user expereince have became my
+          biggest interests lately. Hopefully in the future, I can get the
+          opportunity to apply what I have learnt in real world problem and
+          explore new things in this tech industry.
+        </p>
+      </div>
+    </div>
+
+    <!-- Previous course nd experience(WORKS SECTION) that showcase number of encountered courses along with brief description of what being covered within that course -->
+    <div class="course-container" id="#course-section">
+      <div class="course-section-title">
+        <h2>MY COMPLETED CS COURSE</h2>
+      </div>
+      <div class="course-list">
+        <div>
+          <button class="course-button" data-modal-target="#modal">
+            CS202 - Programming System
+          </button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">CS202 - Programming System</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Become familiar with the language and operating system environment
+              used in most upper division courses in the Computer Science major
+              curriculum. Use of the file system, operating-system calls, and
+              shell-level programming; low-level debugging of high-level
+              programs. Programming exercises will include applications from
+              data structures (e.g. B-trees) and memory management techniques.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal1">
+            CS300 - Element Software Engineer
+          </button>
+          <div class="modal" id="modal1">
+            <div class="modal-header">
+              <div class="title">CS300 - Element Software Engineer</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Practical techniques of program development for medium-scale
+              software produced by individuals. Software development from
+              problem specification through design, implementation, testing, and
+              maintenance. The fundamental design techniques of step-wise
+              refinement and data abstraction.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal2">
+            CS333 - Intro to Operating System
+          </button>
+          <div class="modal" id="modal2">
+            <div class="modal-header">
+              <div class="title">CS333 - Intro to Operating System</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Introduction to the principles of operating systems and concurrent
+              programming. Operating system services, file systems, resource
+              management, synchronization. The concept of a process; process
+              cooperation and interference. Introduction to networks, and
+              protection and security.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal3">
+            CS300 - Element Software Engineer
+          </button>
+          <div class="modal" id="modal3">
+            <div class="modal-header">
+              <div class="title">CS350 - Algorithms and Conplexity</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Techniques for the design and analysis of algorithms. Case studies
+              of existing algorithms (sorting, searching, graph algorithms,
+              dynamic programming, matrix multiplication, fast Fourier
+              transform.) NP-Completeness.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal4">
+            CS350 - Algorithms and Conplexity
+          </button>
+          <div class="modal" id="modal4">
+            <div class="modal-header">
+              <div class="title">CS350 - Algorithms and Conplexity</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Techniques for the design and analysis of algorithms. Case studies
+              of existing algorithms (sorting, searching, graph algorithms,
+              dynamic programming, matrix multiplication, fast Fourier
+              transform.) NP-Completeness.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal5">
+            CS410 - Mobile Health in COVID
+          </button>
+          <div class="modal" id="modal5">
+            <div class="modal-header">
+              <div class="title">CS410 - Mobile Health in COVID</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Get to know more about the influence of technology during the
+              pandemic. Understanding the idea of implementing technology and
+              application to help develop, maintain and control the spread of
+              the COVIDs. Building an mobile application that can support and
+              help the improve human health.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal6">
+            CS486 - Intro to Database Management System
+          </button>
+          <div class="modal" id="modal6">
+            <div class="modal-header">
+              <div class="title">
+                CS486 - Intro to Database Management System
+              </div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Introduction to fundamental concepts of database management
+              systems using primarily the relational model. Schema design and
+              refinement. Query languages. Database application development
+              environments. Overview of physical data organization, query
+              optimization and processing, physical design, security, and
+              transactions used in recovery and concurrency control.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal7">
+            CS410 - Virtual Reality
+          </button>
+          <div class="modal" id="modal7">
+            <div class="modal-header">
+              <div class="title">CS410 - Virtual Reality</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              An introduction course to virtual reality concept. Get familiar
+              and understand the fundamentals of development of virtual reality
+              worlds, including mathematical basis of motion and physics in VR
+              worlds, human visual perception, design practices to enable
+              immersive expereince for users, and developemnt on heterogeneorus
+              device hardware.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="course-button" data-modal-target="#modal8">
+            CS410 - Deep Reinforcement Learning
+          </button>
+          <div class="modal" id="modal8">
+            <div class="modal-header">
+              <div class="title">CS410 - Deep Reinforcement Learning</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Expecience with Reinforcement Learning which is one of the sub
+              elements of machine learning. Experience and understand the
+              application of several Reinforcement Learning Methods in real
+              world. Finally, creating a project with implementation fo
+              Reinforcement Learning Method to attemp in solving exisitng
+              problems.
+            </div>
+          </div>
+        </div>
+
+        <div id="overlay"></div>
+      </div>
+    </div>
+
+    <!-- Project Section that contain all the completed project from all the courses in Portland State University -->
+    <!-- <div class="project-section"> -->
+    <div>
+      <div class="project-header"><h2>MY PROJECTS</h2></div>
+
+      <div class="project-container" id="project-section">
+        <div class="row">
+          <div class="project-image">
+            <img
+              src="image/java_background.jpg"
+              alt="Java background for Java project"
+            />
+            <div class="project-description">
+              <h2>ChocAn</h2>
+              <p>
+                As a group of 5, we designed a program for the Chocoholics
+                Anonymous Organization, which is a company thaty provides health
+                treatments for those addicted to chocolat, in attemp of
+                improving the management system for the organization.
+              </p>
+              <div class="more">
+                <a href="###" class="github-link">Github page</a>
+                <div class="icon-links">
+                  <a href="###"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-image">
+            <img
+              src="image/python_background.png"
+              alt="Python background for Python project"
+            />
+            <div class="project-description">
+              <h2>MountainCar-v0</h2>
+              <p>
+                Experimenting with openAI gym environment. The project also
+                attempt to solve the "MountainCar-v0" environment with the
+                implementration of Q-learning and Q-table . Moreover, the
+                project also indicate the performance different of the mountain
+                car when applying greedy and non-greedy apsilon.
+              </p>
+              <div class="more">
+                <a href="###" class="github-link">Github page</a>
+                <div class="icon-links">
+                  <a href="###"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form container for the accessible and responsive contact form with validate input check -->
+    <div class="form-container" id="form-section">
+      <form class="contact-form" id="contact-form" action="">
+        <div class="form-title">
+          <h1>Contact Me</h1>
+        </div>
+
+        <div class="form-element firstname">
+          <label class="input-label" for="firstname"></label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="type-box firstname-box"
+            placeholder="First Name"
+            required
+          />
+        </div>
+
+        <div class="form-element lastname">
+          <label class="input-label" for="lastname"></label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            class="type-box lastname-box"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <div class="form-element email">
+          <label class="input-label" for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="type-box email-box"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div class="form-element phonenumber">
+          <label class="input-label" for="phonenumber"></label>
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            pattern="[(][0-9]{3}[)] [0-9]{3} - [0-9]{4}"
+            placeholder="Phone number (xxx-xxx-xxxx)"
+            required
+            class="type-box phone-box"
+          />
+        </div>
+
+        <div class="form-element messege">
+          <label class="input-label" for="message"></label>
+          <textarea
+            type="text"
+            name="messge"
+            id="messge"
+            placeholder="Enter your message..."
+            class="type-box message-box"
+          ></textarea>
+        </div>
+
+        <div class="form-element utility-button">
+          <input type="submit" value="Submit" class="btn-primary" id="submit" />
+          <input type="reset" value="Reset" class="btn-secondary" id="reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
