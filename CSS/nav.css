@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   margin-top: 1px;
-  z-index: -1px;
+  z-index: 2;
 }
 
 .title-img {
@@ -52,8 +52,7 @@
 
 .nav-link:hover {
   color: blue;
-  border: black solid thin;
-  width: 50%;
+  width: 100%;
   background-color: lightgray;
 }
 
@@ -101,5 +100,7 @@
   .nav-bar.active {
     left: 0px;
     margin-top: -25px;
+    padding: 0;
+    width: 100%;
   }
 }
