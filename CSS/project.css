@@ -55,8 +55,9 @@
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
-  font-weight: 300px;
+  font-weight: 300;
   margin-top: 70px;
+  transition: 0.6s;
 }
 
 .project-image:hover .project-description h2 {

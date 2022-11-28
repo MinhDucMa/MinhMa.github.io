@@ -28,7 +28,7 @@
 .course-button {
   background-color: #a4be7b;
   width: 75%;
-  height: 3.5rem;
+  max-height: 3.5rem;
   border-radius: 40px;
   border: none;
   color: #340095;
@@ -43,7 +43,7 @@
 
 .course-button:active {
   box-shadow: 0 3px 0 #00823f;
-  top: 3px;
+  top: 4px;
 }
 
 .modal {
