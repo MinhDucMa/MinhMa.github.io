@@ -93,7 +93,7 @@
 
 .project-image:hover .more {
   background: whitesmoke;
-  bottom: -35px;
+  bottom: 0;
 }
 
 .more .github-link {
