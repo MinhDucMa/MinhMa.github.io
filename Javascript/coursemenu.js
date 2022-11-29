@@ -1,5 +1,6 @@
+// A popup effect will be enable when users innteractive with button in the course sectnion.
+
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
-// const openModalButtons = document.querySelectorAll("modal");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overLay = document.getElementById("overlay");
 
